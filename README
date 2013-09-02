@@ -1,4 +1,5 @@
 Eclipse Vaadin framework project
+--------------------------------
 
 Compiling Eclipse project:
 
@@ -9,5 +10,8 @@ click ADD...
 Select the Apache Ivy, Apache Ivy Ant Tasks, and Apache IvyDE plugins and click
 NEXT and install them.
 
-Next do same thing for http://vaadin.com/eclipse and install Vaadin Plug-in for
+Do the same thing for http://vaadin.com/eclipse and install Vaadin Plug-in for
 Eclipse.
+
+Then you need to download Apache Tomcat 7 from http://tomcat.apache.org/download-70.cgi. Extract it to some directory for example C:/Tomcat 7. Then you need to download postgresql jdbc driver from 
+http://jdbc.postgresql.org/download/postgresql-9.2-1003.jdbc4.jar and put it to tomcat 7 lib directory for example c:/tomcat 7/lib directory.
