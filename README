@@ -1,1 +1,13 @@
 Eclipse Vaadin framework project
+
+Compiling Eclipse project:
+
+First you need to install plugins for Eclipse. Go HELP -> INSTALL NEW SOFTWARE...
+Paste url http://www.apache.org/dist/ant/ivyde/updatesite to WORK WITH: box and 
+click ADD...
+
+Select the Apache Ivy, Apache Ivy Ant Tasks, and Apache IvyDE plugins and click
+NEXT and install them.
+
+Next do same thing for http://vaadin.com/eclipse and install Vaadin Plug-in for
+Eclipse.
