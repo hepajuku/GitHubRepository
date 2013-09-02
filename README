@@ -1,7 +1,7 @@
 Eclipse IDE Vaadin framework project
---------------------------------
+------------------------------------
 
-Compiling Eclipse project:
+Running Eclipse project:
 
 First you need to install plugins for Eclipse. Go HELP -> INSTALL NEW SOFTWARE...
 Paste url http://www.apache.org/dist/ant/ivyde/updatesite to WORK WITH: box and 
@@ -18,4 +18,12 @@ http://jdbc.postgresql.org/download/postgresql-9.2-1003.jdbc4.jar and put it to 
 
 In Eclipse go to WINDOW -> PREFERENCES AND SERVER -> RUNTIME ENVIRONMENTS. You need to install apache tomcat runtime environment. Click ADD... and Select Apache Tomcat v7.0 and CHECK Create a new local server and klick NEXT. Click BROWSE... and select your tomcat 7 directory for example c:/tomcat 7/ and click FINISH and OK.
 
-Download project from GitHub with Git Shell. In Git Hub shell go for example to directory c:/repo and use command "git clone git://github.com/hepajuku/GitHubRepository.git". Now go to Eclipse FILE -> IMPORT... and select GIT -> PROJECTS FROM GIT. Press NEXT and select LOCAL and press NEXT and click ADD... and select c:/repo/GitHubRepository directory and NEXT. Select IMPORT AS GENERAL PROJECT and click NEXT and FINISH.
+Download project from GitHub with Git Shell. In Git Hub shell go for example to directory c:/repo and use command "git clone git://github.com/hepajuku/GitHubRepository.git". Now when you start eclipse choose c:/repo/GitHubRepository as your WORKSPACE directory.
+
+Select Project from Project Explorer. Press RUN -> DEBUG AS -> DEBUG ON SERVER. Choose an existing server and your tomcat v7.0 server at localhost. Press NEXT and put Project to CONFIGURED side with ADD button. Press FINISH and application should start. If application doesnt run, try to CLEAN TOMCAT WORKING DIRECTORY by right clickin it from SERVERS panel or remove it from RUNTIME ENVIRONMENTS and add again and remove Servers from PROJECT EXPLORER.
+
+
+PostgreSQL server requirements
+------------------------------
+
+In postgreSQL database you need to have database called mydatabase and there one table called job_applications with columns first_name (character(100 length)), last_name (character(100 length)), gender (character(20 length)) and application (character(1000 length)). You also need user "admin" as superuser with "1234" password to mydatabase. Easiest way is to use pgAdmin III program to do that.
