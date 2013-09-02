@@ -1,4 +1,4 @@
-Eclipse Vaadin framework project
+Eclipse IDE Vaadin framework project
 --------------------------------
 
 Compiling Eclipse project:
@@ -13,5 +13,9 @@ NEXT and install them.
 Do the same thing for http://vaadin.com/eclipse and install Vaadin Plug-in for
 Eclipse.
 
-Then you need to download Apache Tomcat 7 from http://tomcat.apache.org/download-70.cgi. Extract it to some directory for example C:/Tomcat 7. Then you need to download postgresql jdbc driver from 
+Then you need to download Apache Tomcat 7 from http://tomcat.apache.org/download-70.cgi. Extract it to some directory for example C:/Tomcat 7/. Then you need to download postgresql jdbc driver from 
 http://jdbc.postgresql.org/download/postgresql-9.2-1003.jdbc4.jar and put it to tomcat 7 lib directory for example c:/tomcat 7/lib directory.
+
+In Eclipse go to WINDOW -> PREFERENCES AND SERVER -> RUNTIME ENVIRONMENTS. You need to install apache tomcat runtime environment. Click ADD... and Select Apache Tomcat v7.0 and CHECK Create a new local server and klick NEXT. Click BROWSE... and select your tomcat 7 directory for example c:/tomcat 7/ and click FINISH and OK.
+
+Download project from GitHub with Git Shell. In Git Hub shell go for example to directory c:/repo and use command "git clone git://github.com/hepajuku/GitHubRepository.git". Now go to Eclipse FILE -> IMPORT... and select GIT -> PROJECTS FROM GIT. Press NEXT and select LOCAL and press NEXT and click ADD... and select c:/repo/GitHubRepository directory and NEXT. Select IMPORT AS GENERAL PROJECT and click NEXT and FINISH.
