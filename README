@@ -26,8 +26,8 @@ ________
 |______|
 
 
-Running Eclipse project:
-------------------------
+Running Eclipse project
+-----------------------
 
 First you need to install plugins for Eclipse. Go HELP -> INSTALL NEW SOFTWARE...
 Paste url http://www.apache.org/dist/ant/ivyde/updatesite to WORK WITH: box and 
