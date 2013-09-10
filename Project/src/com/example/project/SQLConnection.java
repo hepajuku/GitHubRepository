@@ -23,7 +23,7 @@ public class SQLConnection {
 		
 	/**
 	 * Connect to SQL database
-	 * @return returns integer, 0 no problems, 1 connection problem
+	 * @return returns integer 0 if no problems and 1 if there's a connection problem
 	 */
 	public int setConnection() {
 		
@@ -68,13 +68,12 @@ public class SQLConnection {
 	 * Send string to database. String needs to be 'comma' separated.
 	 * "'fName','lName','gender','application'".
 	 * @param str Comma separated string that is sent to SQL database
-	 * @return 0 if data was sent to database, 1 if error occurred
+	 * @return 0 if data was sent to database, 1 if an error occurred
 	 */
 	public int sendToDatabase(String str) {
 		try {
 			//statem is executed SQL statement
-			String statem = "INSERT INTO job_applications(first_name,last_name,gender,application) VALUES(" 
-					+str +")";
+			String statem = "INSERT INTO job_applications(first_name,last_name,gender,application) VALUES(" +str +")";
 			statement.execute(statem);			
 			
 		} catch (SQLException error) {

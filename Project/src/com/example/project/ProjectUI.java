@@ -44,11 +44,6 @@ public class ProjectUI extends UI {
 		layout.addComponent(gender);
 		layout.addComponent(tArea);
 		layout.addComponent(button);
-				
-		//helper string to check if gender returns null
-		String genTemp = "";
-		if (gender.getValue() != null)
-			genTemp = gender.getValue().toString();
 				 
 		//create a job application
 		JobApplication jApplication = new JobApplication();
